@@ -31,6 +31,17 @@ export default {
       inputName: "",
       inputPassword: "", 
     }
+  },
+  methods: {
+    handleClick() {
+      console.log("Esqueceu sua senha?")
+    },
+    login() {
+      console.log("Partir")
+    },
+    signup() {
+      console.log("Cadastra-se >")
+    }
   }
 }
 </script>
