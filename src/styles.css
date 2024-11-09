@@ -69,3 +69,24 @@ body {
   height: 100%;
   font-family: exo, sans-serif;
 }
+
+.input {
+  width: 273px;
+  height: 46px;
+  border-radius: 5px;
+  border: none;
+  padding: 0 10px;
+  background-color: #2D3545;  
+  color: #C8A585;
+  font-family: exo, sans-serif;
+
+}
+
+.input::placeholder {
+  color: #C8A585;
+}
+
+.input:focus {
+  border: 2px solid #C8A585;
+  outline: none;
+}
