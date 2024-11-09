@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <FormsLogin />
+    <FormsLogin v-bind:name="name" @user-login="updateName"/>
   </div>
 </template>
 
@@ -12,7 +12,18 @@ export default {
   name: 'App',
   components: {
     FormsLogin
+  },
+  data (){
+    return {
+      name: "",
+    }
+  },
+  methods: {
+    updateName(name) {
+      this.name = name;
+    }
   }
+
 }
 </script>
 

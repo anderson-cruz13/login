@@ -37,7 +37,9 @@ export default {
       console.log("Esqueceu sua senha?")
     },
     login() {
-      console.log("Partir")
+      this.$emit('user-login', this.inputName);
+      this.inputName = "";
+      this.password = "";
     },
     signup() {
       console.log("Cadastra-se >")
