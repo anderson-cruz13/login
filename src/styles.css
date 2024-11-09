@@ -90,3 +90,52 @@ body {
   border: 2px solid #C8A585;
   outline: none;
 }
+
+.button-text {
+  font-size: 12px;
+  color: #C8A585;
+  cursor: pointer;
+  font-family: exo, sans-serif;
+}
+.button-text:hover{
+  text-decoration: underline;
+}
+
+.button-login {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  width: 176px;
+  height: 46px;
+  border-radius: 5px;
+  border: none;
+  background-color: #2D3545;
+  color: #C8A585;
+  cursor: pointer;
+  margin-top: 20px;
+  transition-duration: 1s;
+  font-family: exo, sans-serif;
+
+}
+
+.button-login:hover {
+  background-color: #C8A585;
+  color: #2D3545;
+  transition-duration: 1s;
+}
+
+
+.button-signup {
+  font-size: 12px;
+  color: #C8A585;
+  cursor: pointer;
+  margin-top: 20px;
+  display: flex;
+  justify-content: right;
+  font-family: exo, sans-serif;
+}
+
+.button-signup:hover{
+  text-decoration: underline;
+}
