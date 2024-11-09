@@ -6,13 +6,15 @@
     </div>
 
     <div class="login">
-      <form>
-        <div class="form-group">
-          <input class="input" type="text" placeholder="Username">
-          <input class="input" type="password" placeholder="Password">
-        </div>
-        <button type="submit" class="btn btn-primary">Login</button>
-      </form>
+      <img class="logo" src="@/assets/rockt_icon.png">
+  
+      <div class="login-form">
+        <input class="input" type="text" placeholder="Nome">
+        <input class="input" type="password" placeholder="Password">
+        <div class="button-text" @click="handleClick">Esqueceu sua senha?</div>
+        <div class="button-login" @click="login">Partir</div>
+        <div class="button-signup" @click="signup">Cadastra-se ></div>
+      </div>
     </div>
 
   </div>
