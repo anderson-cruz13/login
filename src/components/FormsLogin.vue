@@ -11,7 +11,7 @@
     <template v-else>
       <div class="description">
         Muito bem
-        <span class="highlight">{{name}}</span>, agora é só partir para sua viagem pelo aprendizado!
+        <span class="highlight">{{name.toUpperCase()}}</span>, agora é só partir para sua viagem pelo aprendizado!
       </div>
     </template>
 
@@ -20,9 +20,9 @@
   
       <div class="login-form">
         <input v-model="inputName" class="input" type="text" placeholder="Nome">
-        <input v-model = "inputPassword" class="input" type="password" placeholder="Password">
+        <input v-model = "inputPassword" class="input" type="password" placeholder="Senha">
         <div class="button-text" @click="handleClick">Esqueceu sua senha?</div>
-        <div class="button-login" @click="login">Partir</div>
+        <div v-if="inputName && inputPassword" class="button-login" @click="login">Partir</div>
         <div class="button-signup" @click="signup">Cadastra-se ></div>
       </div>
     </div>
@@ -49,7 +49,7 @@ export default {
     login() {
       this.$emit('user-login', this.inputName);
       this.inputName = "";
-      this.password = "";
+      this.inputPassword = "";
     },
     signup() {
       console.log("Cadastra-se >")
