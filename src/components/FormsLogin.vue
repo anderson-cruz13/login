@@ -5,7 +5,7 @@
       <p>Welcome back</p>
     </div>
 
-    <div class="form">
+    <div class="login">
       <form>
         <div class="form-group">
           <input class="input" type="text" placeholder="Username">
@@ -17,3 +17,11 @@
 
   </div>
 </template>
+
+<script>
+import '../styles.css'
+
+export default {
+
+}
+</script>

@@ -6,6 +6,7 @@
 
 <script>
 import FormsLogin from './components/FormsLogin.vue'
+import "@/styles.css"
 
 export default {
   name: 'App',
