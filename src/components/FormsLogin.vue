@@ -1,9 +1,13 @@
 <template>
   <div class="container">
 
-    <div class ="description">
-      <p>Welcome back</p>
-    </div>
+    <template v-if="!name">
+      <div class="description">
+        Comece agora sua jornada no mundo 
+        <span class="highlight">dev</span>, faça agora seu login e aproveite nosso curso 
+        <span class="highlight">gratuito</span>!
+      </div>
+    </template>
 
     <div class="login">
       <img class="logo" src="@/assets/rockt_icon.png">

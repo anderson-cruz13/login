@@ -139,3 +139,7 @@ body {
 .button-signup:hover{
   text-decoration: underline;
 }
+
+.highlight {
+  color: #C8A585;
+}
