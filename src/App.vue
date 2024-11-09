@@ -1,21 +1,17 @@
 <template>
-  <div>App</div>
+  <div class="container">
+    <FormsLogin />
+  </div>
 </template>
 
 <script>
+import FormsLogin from './components/FormsLogin.vue'
 
 export default {
-
+  name: 'App',
+  components: {
+    FormsLogin
+  }
 }
 </script>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
