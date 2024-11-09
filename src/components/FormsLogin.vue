@@ -24,6 +24,13 @@
 import '../styles.css'
 
 export default {
-
+  name: 'FormsLogin',
+  props: ['name'],
+  data () {
+    return {
+      inputName: "",
+      inputPassword: "", 
+    }
+  }
 }
 </script>
